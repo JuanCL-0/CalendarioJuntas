@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'RR';
+    src: url('../fonts/Righteous-Regular.ttf') format('truetype');
+  }
+*{
+    font-family: 'RR',Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #286d92;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+header{
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height:10% ;
+}
+h1{
+    font-size:5vw;
+    /*color: #ecfcff;*/
+    color: #ecebe4;
+    text-shadow: 3px 2px 5px rgba(15,29,47,0.93);
+}
+.container{
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+form{
+    height: 50vh;
+    width: 25em;
+    padding: 25px;
+    border-radius: 50px;
+    background: #286d92;
+    box-shadow:  20px 20px 60px #225d7c,
+                 -20px -20px 60px #2e7da8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.input-div-one,.input-div-pass{
+    width: 80%;
+}
+#input,#usuario{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 26px;
+    background: #286d92;
+    box-shadow: inset 20px 20px 18px #236080,
+                inset -20px -20px 18px #2d7aa4;
+    color: white;
+}
+
+input#usuario::placeholder{
+    background-image: url('../img/user2.png');
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+input#input::placeholder{
+    background-image: url('../img/llave.png');
+    color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+input:focus{
+    background-color: red;
+}
+img#logoccl{
+    width: 5vw;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #2b759c, #246283);
+    box-shadow:  7px 7px 14px #163c50,
+             -7px -7px 14px #3a9ed4;
+}
+svg#freepik_stories-online-calendar{
+    height: 50vh;
+    width: 25em;
+}
+.input-div-invitado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input#btnIngresar,input#btnInvitado{
+    border: none;
+    background-color: #ecebe4;
+    width: 80%;
+    padding: 10px;
+    border-radius: 26px;
+    background: linear-gradient(170deg, #ecebe4, #d4d4cd);
+    box-shadow: 13px 12px 20px 0px #19465c, -7px -6px 20px 5px #6493ad;
+    font-weight: 300;
+}
+
