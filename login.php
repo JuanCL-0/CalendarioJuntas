@@ -38,5 +38,17 @@
             </div>
         </form>
     </div>
+    <div id="popwar">
+        <div id="popcontainer">
+            <button type="button" class="close" onclick="cerrarPopup()">&times;</button>
+            <h4>Campos vacios</h4>
+        </div>
+    </div>
+    <script>
+    function cerrarPopup() {
+        var popup = document.getElementById('popwar');
+        popup.style.display = 'none';
+    }
+    </script>
 </body>
 </html>

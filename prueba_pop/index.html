@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página con Popup</title>
+    <style>
+        /* Estilos para el contenedor del popup */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .popup-content {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function mostrarPopup() {
+            var popup = document.getElementById('popup-container');
+            popup.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Página con Popup</h1>
+    <button onclick="mostrarPopup()">Abrir Popup</button>
+    <div id="popup-container" class="popup-container">
+        <div class="popup-content">
+            <?php
+             include 'prueba.php';?>
+        </div>
+    </div>
+</body>
+</html>
